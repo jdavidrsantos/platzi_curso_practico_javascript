@@ -1,0 +1,24 @@
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 17px;
+}
+.subtitle_2 {
+  font-size: 1 rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.imgtittle {
+  width: 10%;
+  height: auto;
+}
+.size {
+  width: auto;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: green;
+  font-size: 2rem;
+  background-color: black;
+}
