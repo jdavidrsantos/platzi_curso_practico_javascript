@@ -157,6 +157,47 @@ alert (estees);
 }
 
 
-// function areacirculo(radio){
-//     return (radio*radio)*PI
-// };
+
+
+//Altura triangulo
+function alturaTriangulo ()
+{   const inputt = document.getElementById("inputtriangulo1");
+    const valuee = (inputt.value)*1;
+    const input = document.getElementById("inputtriangulo2");
+    const value = (input.value)*1;
+    //base
+const inputtt = document.getElementById("inputtriangulo3");
+var valueee = (inputtt.value)*1;
+console.log("esta es la base "+valueee);
+
+    if (valuee != value)
+    {console.error ("Los lados a y b no son iguales");
+    }else   {
+        console.log ("lados iguales campeon");
+        let trianguloPequeñoLadoA;
+        let alturadesconocida;
+         const trianguloPequeñoLadoB = value;
+         const trianguloPequeñoLadoBase = valueee/2;
+        
+         const operacionuno = value*value;
+         console.log (  "La operacion 1 que es un lado es "+operacionuno );
+         const operaciondos = (valueee/2) ;
+         const operaciondoss = operaciondos*operaciondos;
+         console.log (" la operacion 2 que es la base da "+ operaciondoss);  
+
+         const operaciontres = operacionuno - operaciondoss;
+         console.log("dio " + operaciontres);
+         const operacioncuatro = Math.sqrt (operaciontres);
+        console.log(operacioncuatro);
+        alert(operacioncuatro);
+            
+            }
+
+
+
+
+
+
+
+    }
+
