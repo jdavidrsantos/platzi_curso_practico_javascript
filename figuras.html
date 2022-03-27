@@ -16,14 +16,52 @@
 
 
 </div>
-    <p class="subtitle">Este es el primer taller del curso Práctico de JavaScript</p>
-    <p class="subtitle_2">Confiable y diseño para su uso diario</p>
+    <p class="subtitle">Esto lo hago pa' divertirme, pa' divertirme XD</p>
+    <p class="subtitle_2">Confiable y diseñado para su uso diario</p>
 
-    <div class="row">
-        <div class="col-6">
-          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+
+  <div class="container mt-5">
+    <div class="row text-center ">
+        <div class="col-5 cuadrado1">
+          <img class="cuadrado" src="./pictures/cuadrado.png" alt="">
+          <h2 class="tittlesfigures">Cuadrado</h2>
+          <label for="inputcuadrado"> <p >Escriba cuanto mide cada lado de tu cuadrado:</p> </label>
+          <input id="inputcuadrado" class="form-control"  type="number" min="0" max="100" value="" placeholder="Ingresa un numero" aria-label="First name">
+            <button type="button" onclick="calcularperimetro()"  class="btn btn-secondary btn-block mybutton mt-2">Calcular el perimetro</button>
+            <button type="button" onclick="calculararea()" class="btn btn-secondary btn-block mybutton mt-2">Calcular el área</button>
         </div>
+        <div class="col-5 cuadrado1">
+          <img class="triangulo" src="./pictures/triangulo.png" alt="">
+          <h2 class="tittlesfigures">Triángulo</h2>
+          <p aria-label="inputtriangulo">Escriba cuanto mide cada lado de tu triángulo:</p>
+          <input id="inputtriangulo1" class="form-control"  type="number" min="0" max="100" value="" placeholder="Primer lado" aria-label="inputtriangulo">
+          <input id="inputtriangulo2" class="form-control"  type="number" min="0" max="100" value="" placeholder="Segundo lado" aria-label="inputtriangulo">
+          <input id="inputtriangulo3" class="form-control"  type="number" min="0" max="100" value="" placeholder="Base" aria-label="inputtriangulo">
+          <input id="inputtriangulo4" class="form-control"  type="number" min="0" max="100" value="" placeholder="Altura" aria-label="inputtriangulo">
+            <button type="button" onclick="calcularperimetrotriangulo()" class="btn btn-secondary  btn-block mybutton mt-2">Calcular el perimetro</button>
+            <button type="button" onclick="calcularareatriangulo()" class="btn btn-secondary btn-block mybutton mt-2">Calcular el área</button>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-3"></div>
+             <div class="col-5 text-center align-items-center">
+             <img class="cuadrado" src="./pictures/circulo.png" alt="">
+            <h2 class="tittlesfigures">Círculo</h2>
+            <p>Escriba cuanto mide cada lado de tu circulo:</p>
+            <input id="inputcirculo"  class="form-control"  type="number" min="0" max="100" value="0" placeholder="First name" aria-label="First name">
+            <button type="button" onclick="perimetrocirculocalculo()" class="btn btn-secondary btn-lg btn-block mybutton mt-2">Calcular el perimetro</button>
+            <button type="button" onclick="areacirculocalculo()" class="btn btn-secondary btn-lg btn-block mybutton mt-2">Calcular el area</button>
+            </div>
+        <div class="col-3"></div>
       </div>
+  </div>
+
+
+
 
 
    <script src="./figuras.js"></script>

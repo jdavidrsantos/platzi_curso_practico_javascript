@@ -36,8 +36,8 @@ console.group("Triangulos");
 //     + ladotriangulo2+"cm, " 
 //     + basetriangulo+"cm"   
 //     );
-function perimetrotriangulo(lado1,lado2, base ){
-return lado1+lado2+base;
+function perimetrotriangulo(lado){
+return lado;
 }
 
 function areatriangulo (base, altura){
@@ -86,3 +86,77 @@ function areacirculo(radio){
 
 console.groupEnd();
 
+
+//Aqui interactuamos con el HTML
+
+//CUADRADO
+function calcularperimetro (){
+const input = document.getElementById("inputcuadrado");
+const value = input.value;
+const perimetro = perimetroCuadrado(value);
+alert(perimetro);
+}
+
+
+function calculararea (){
+const input = document.getElementById("inputcuadrado");
+const value = input.value;
+console.log(value);
+const area = areaCuadrada (value);
+alert(area);
+}
+
+//TRIANGULO
+function calcularperimetrotriangulo (){
+const inputt = document.getElementById("inputtriangulo1");
+const valuee = (inputt.value)*1;
+
+const input = document.getElementById("inputtriangulo2");
+const value = (input.value)*1;
+
+const inputtt = document.getElementById("inputtriangulo3");
+var valueee = (inputtt.value)*1;
+
+const total= valuee+value+valueee;
+console.log (total);
+
+const area = perimetrotriangulo(total);
+alert (area);
+}
+
+
+function calcularareatriangulo(){
+const trianguloarea = document.getElementById("inputtriangulo4");
+const triangulo = (trianguloarea.value)*1;
+
+const inputtt = document.getElementById("inputtriangulo3");
+var valueee = (inputtt.value)*1;
+
+const trianguloresult = areatriangulo(valueee, triangulo);
+alert(trianguloresult);
+}
+
+//CIRCULO
+
+function perimetrocirculocalculo(){
+const diametrocirculo = document.getElementById("inputcirculo");
+const  value = diametrocirculo.value;
+console.log(value); 
+
+const circuloresult= perimetrocirculo(value);
+alert (circuloresult);
+}
+
+
+function areacirculocalculo (){
+let hola = document.getElementById("inputcirculo");
+let holaresult = hola.value;
+console.log(holaresult);
+const estees = areacirculo(holaresult);
+alert (estees);
+}
+
+
+// function areacirculo(radio){
+//     return (radio*radio)*PI
+// };
